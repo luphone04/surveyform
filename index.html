@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 title="id">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="https://survey-form.freecodecamp.rocks" id="survey-form">
+      <fieldset>
+        <p>
+          <label for="name-label">
+            Name <input 
+            type="text" 
+            name="name" 
+            id="name-label" 
+            required 
+            placeholder="Enter your name"/>
+          </label>
+        </p>
+        <p>
+          <label for="email-label">
+            Email <input 
+            type="email" 
+            name="mail" 
+            id="email-label" 
+            required 
+            placeholder="Enter your Email"/>
+          </label>
+        </p>
+        <p>
+          <label for="number-label">
+            Age(optional)
+            <input
+            type="number" 
+            name="age" 
+            id="number-label"
+            max="99" 
+            min="10" 
+            placeholder="Age"/>
+          </input>
+        </p>
+        <p>
+          <label for="">
+            Which option best describes your current role?
+            <select name="dropdown" id="dropdown">
+                <option value=""disabled selected hidden>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Job">Full Time Job</option>
+                <option value="Learner">Full Time Learner</option>
+                <option value="Not Say">Prefer not to say </option>
+                <option value="other">Other</option>
+            </select>
+          </label>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
