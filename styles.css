@@ -1,7 +1,13 @@
 body{
     background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    color: white;
+    text-align: center;
 }
 header{
     text-align: center;
-    
+    color: white;
+}
+form{
+    border: 1px solid white;
+
 }
