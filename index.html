@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testing for survey form</title>
-    <link href="styles.css" rel="stylessheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <header class="">
+      <header class="header">
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">
           Thank you for taking the time to help us improve the platform
         </p>
       </header>
-      <fieldset>
         <form id="survey-form">
           <div class="form-group">
             <label for="name">Name:</label>
@@ -38,12 +37,12 @@
             />
           </div>
           <div class="form-group">
-            <label for="number">Age<span class="clue">(optional)</span> </label>
-            <input type="number" id="age" min="10" max="99" placeholder="Age" />
+            <label for="number" id="number-label">Age<span class="clue">(optional)</span> </label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
           </div>
           <div class="form-group">
             <p>Which option best describes your current role?</p>
-            <select name="role" id="dropdown"required>
+            <select name="role" id="dropdown" required>
                 <option disabled="" selected="" value="">Select current role</option>
                 <option value="student">Student</option>
                 <option value="job">Full Time Job</option>
@@ -91,9 +90,7 @@
               <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
           </div>
-          </div>
         </form>
-      </fieldset>
     </div>
   </body>
 </html>
